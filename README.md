@@ -63,8 +63,8 @@ tpd_curator/
 ### Setup
 
 ```bash
-git clone <repository-url> tpd_curator
-cd tpd_curator
+git clone https://github.com/yaochenr/TPD_Curator.git
+cd TPD_Curator
 pixi install
 ```
 
