@@ -1,0 +1,257 @@
+{
+  "_legacy": [],
+  "10.1016/j.ejmech.2024.116904": [
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "BRD4BD2",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acs.jmedchem.1c02175": [
+    {
+      "pred_value": "Unknown",
+      "labeled_value": "SIAH1",
+      "feature": "Recruiter",
+      "result": "no"
+    }
+  ],
+  "10.1021/acsmedchemlett.4c00250": [
+    {
+      "pred_value": "IKZF1",
+      "labeled_value": "CK1α",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "CK1α",
+      "labeled_value": "GSPT1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-023-40385-9": [
+    {
+      "pred_value": "HiBit",
+      "labeled_value": "HiBiT system",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "CK1α",
+      "labeled_value": "PLZF",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "CK1α",
+      "labeled_value": "SALL4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF1",
+      "labeled_value": "PLZF",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF1",
+      "labeled_value": "SALL4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "SALL4",
+      "labeled_value": "PLZF",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-024-44698-1": [
+    {
+      "pred_value": "CK1α",
+      "labeled_value": "IKZF2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBiT",
+      "labeled_value": "HiBiT assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HiBiT",
+      "labeled_value": "immunoblotting",
+      "feature": "Assay",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-025-58431-z": [
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "GSPT1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "IKZF1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBiT",
+      "labeled_value": "HiBiT degradation assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "IKZF3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "SALL4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBiT",
+      "labeled_value": "FACS",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBiT",
+      "labeled_value": "flow cytometry",
+      "feature": "Assay",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41589-024-01668-4": [
+    {
+      "pred_value": "DCAF16",
+      "labeled_value": "DCAF16 (CRL4DCAF16)",
+      "feature": "Recruiter",
+      "result": "yes"
+    }
+  ],
+  "10.1101/2024.07.10.602857": [
+    {
+      "pred_value": "KLHDC3",
+      "labeled_value": "CRL2KLHDC3",
+      "feature": "Recruiter",
+      "result": "yes"
+    }
+  ],
+  "10.1126/science.adk4422": [
+    {
+      "pred_value": "eGFP(-SD40)",
+      "labeled_value": "eGFP (fused to SD36)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD40)",
+      "labeled_value": "eGFP (fused to SD40 F18Q)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD40)",
+      "labeled_value": "eGFP (fused to SD40)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "eGFP(-SD40)",
+      "labeled_value": "eGFP (fused to SD56)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD36)",
+      "labeled_value": "eGFP (fused to SD36)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "eGFP/mCherry",
+      "labeled_value": "Flow cytometry (eGFP:mCherry reporter)",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "eGFP(-SD36)",
+      "labeled_value": "eGFP (fused to SD40 F18Q)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD36)",
+      "labeled_value": "eGFP (fused to SD40)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD36)",
+      "labeled_value": "eGFP (fused to SD56)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1186/s13045-024-01592-z": [
+    {
+      "pred_value": "IKZF1",
+      "labeled_value": "IKZF3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF3",
+      "labeled_value": "CK1α",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.7554/eLife.59994": [
+    {
+      "pred_value": "CDK12-CCNK",
+      "labeled_value": "Cyclin K (CCNK)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "DDB1",
+      "labeled_value": "DDB1-CUL4-RBX1",
+      "feature": "Recruiter",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acscentsci.4c00286": [
+    {
+      "pred_value": "BRD4-S",
+      "labeled_value": "BRD4",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRD4-L",
+      "labeled_value": "BRD4",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1021/jacsau.4c00762": [
+    {
+      "pred_value": "Western Blot",
+      "labeled_value": "HiBiT luciferase CK1α degradation assay",
+      "feature": "Assay",
+      "result": "no"
+    }
+  ]
+}

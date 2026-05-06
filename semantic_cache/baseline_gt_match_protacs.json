@@ -1,0 +1,295 @@
+{
+  "_legacy": [],
+  "10.1002/anie.201914396": [
+    {
+      "pred_value": "BRD2",
+      "labeled_value": "Brd3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD2",
+      "labeled_value": "Brd4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD3",
+      "labeled_value": "Brd4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1021/acscentsci.2c01369": [
+    {
+      "pred_value": "p-p38",
+      "labeled_value": "Flag-tagged p38",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-021-21159-7": [
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "CAL-12T",
+      "labeled_value": "CAL-12-T",
+      "feature": "Cell_Line",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41467-021-27210-x": [
+    {
+      "pred_value": "BCL2",
+      "labeled_value": "BCL-xL",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BCL2",
+      "labeled_value": "BCL-2",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BCL-xL",
+      "labeled_value": "BCL-2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41589-019-0294-6": [
+    {
+      "pred_value": "SMARCA2",
+      "labeled_value": "SMARCA4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "SMARCA2",
+      "labeled_value": "PBRM1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "PBRM1",
+      "labeled_value": "SMARCA4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "MV4;11",
+      "labeled_value": "MV-4-11",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "NCI-H1568",
+      "labeled_value": "SK-MEL-5",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "NCI-H1568",
+      "labeled_value": "MV-4-11",
+      "feature": "Cell_Line",
+      "result": "no"
+    }
+  ],
+  "10.1021/acs.jmedchem.6b01912": [
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "Brd4 short",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "Brd4 long",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRD3",
+      "labeled_value": "Brd4 long",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD3",
+      "labeled_value": "Brd4 short",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD2",
+      "labeled_value": "Brd4 short",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD2",
+      "labeled_value": "Brd4 long",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HeLa",
+      "labeled_value": "HeLa cells",
+      "feature": "Cell_Line",
+      "result": "yes"
+    }
+  ],
+  "10.1002/anie.202101864": [
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "Cereblon",
+      "feature": "Recruiter",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acs.jmedchem.2c01817": [
+    {
+      "pred_value": "cIAP2",
+      "labeled_value": "XIAP",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "cIAP2",
+      "labeled_value": "cIAP1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "XIAP",
+      "labeled_value": "cIAP1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-023-44237-4": [
+    {
+      "pred_value": "BRD7",
+      "labeled_value": "BRD9",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HEK293/BRD9-HiBiT",
+      "labeled_value": "HEK293",
+      "feature": "Cell_Line",
+      "result": "yes"
+    }
+  ],
+  "10.1016/j.apsb.2023.01.014": [
+    {
+      "pred_value": "Hs746T",
+      "labeled_value": "EBC-1",
+      "feature": "Cell_Line",
+      "result": "no"
+    }
+  ],
+  "10.1021/acs.jmedchem.2c01149": [
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acs.jmedchem.3c00851": [
+    {
+      "pred_value": "MOLT-4",
+      "labeled_value": "MOLT4",
+      "feature": "Cell_Line",
+      "result": "yes"
+    }
+  ],
+  "10.1021/jacs.9b13907": [
+    {
+      "pred_value": "Mino",
+      "labeled_value": "primary cells from chronic lymphocytic leukemia (CLL) patients",
+      "feature": "Cell_Line",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-022-33430-6": [
+    {
+      "pred_value": "RKO",
+      "labeled_value": "NCI-H1568",
+      "feature": "Cell_Line",
+      "result": "no"
+    }
+  ]
+}

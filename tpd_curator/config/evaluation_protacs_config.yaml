@@ -1,0 +1,17 @@
+data:
+  json_path: /Users/yaochenr/project/tpd_curator/data_source/250825_protac_papers
+  output_dir: /Users/yaochenr/project/tpd_curator/output
+  json_fields_to_remove: ["pmcid", "body_text", "references", "extraction_date", "xml_metadata", "supplementary_info"]
+  sections_to_remove: ["Supplementary information", "Unknown Section", "Online content", "Source data"]
+  figure_fields_to_remove: ["id", "image_url"]
+  pdf_path: /Users/yaochenr/project/tpd_curator/data_source/250825_protac_papers
+  paper_filter_file: /Users/yaochenr/project/tpd_curator/data_source/250825_protac_papers/paper_dois/avaliable_paper_ids.json
+
+results:
+  results_dir: /Users/yaochenr/project/tpd_curator/output/results
+
+evaluation:
+  labeled_data_path: /Users/yaochenr/project/data/clean_data_csv/26-04-24-PROTAC-GT-Processed.csv
+  # cache_file_path: /Users/yaochenr/project/tpd_curator/semantic_cache/llm_gt_match_protacs.json # llm vs. gt
+  # cache_file_path: /Users/yaochenr/project/tpd_curator/semantic_cache/baseline_gt_match_protacs.json # baseline vs. gt
+  cache_file_path: /Users/yaochenr/project/tpd_curator/semantic_cache/llm_baseline_match_protacs.json # llm vs. baseline

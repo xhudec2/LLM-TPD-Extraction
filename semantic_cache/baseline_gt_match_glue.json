@@ -1,0 +1,177 @@
+{
+  "_legacy": [],
+  "10.1021/acs.jmedchem.0c01313": [
+    {
+      "pred_value": "AlphaScreen Assay hGSPT293-HiBit",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "GSPT2",
+      "labeled_value": "GSPT1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBit",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "no"
+    }
+  ],
+  "10.1016/j.ejmech.2024.116904": [
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "BRD4BD2",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "TR-FRET",
+      "labeled_value": "Flow cytometry(eGFP/mCherry)",
+      "feature": "Assay",
+      "result": "no"
+    }
+  ],
+  "10.1021/jacs.3c08307": [
+    {
+      "pred_value": "VHL",
+      "labeled_value": "VCB complex",
+      "feature": "Recruiter",
+      "result": "yes"
+    },
+    {
+      "pred_value": "NanoBiT",
+      "labeled_value": "HiBiT",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "NanoBiT",
+      "labeled_value": "HiBiT(with MLN4924)",
+      "feature": "Assay",
+      "result": "no"
+    }
+  ],
+  "10.1126/science.adk4422": [
+    {
+      "pred_value": "eGFP(-SD40)",
+      "labeled_value": "eGFP-SD36",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD40)",
+      "labeled_value": "eGFP-SD40",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "eGFP/mCherry",
+      "labeled_value": "Flow cytometry(eGFP/mCherry)",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "eGFP(-SD40)",
+      "labeled_value": "eGFP-SD40(F18Q)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD40)",
+      "labeled_value": "eGFP-SD56",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD36)",
+      "labeled_value": "eGFP-SD36",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "eGFP(-SD36)",
+      "labeled_value": "eGFP-SD40",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD36)",
+      "labeled_value": "eGFP-SD40(F18Q)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "eGFP(-SD36)",
+      "labeled_value": "eGFP-SD56",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRET",
+      "labeled_value": "Flow cytometry(eGFP/mCherry)",
+      "feature": "Assay",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-025-58431-z": [
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "IKZF1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "IKZF3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "SALL4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "GSPT1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF2",
+      "labeled_value": "CK1α",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBiT",
+      "labeled_value": "Flow cytometry(FACS)",
+      "feature": "Assay",
+      "result": "no"
+    }
+  ],
+  "10.1186/s13045-024-01592-z": [
+    {
+      "pred_value": "IKZF1",
+      "labeled_value": "CK1α",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF1",
+      "labeled_value": "IKZF3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "IKZF3",
+      "labeled_value": "CK1α",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ]
+}

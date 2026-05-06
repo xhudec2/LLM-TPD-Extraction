@@ -1,0 +1,549 @@
+{
+  "_legacy": [],
+  "10.1002/anie.201914396": [
+    {
+      "pred_value": "BRD2",
+      "labeled_value": "Brd4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD2",
+      "labeled_value": "Brd3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD3",
+      "labeled_value": "Brd4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1016/j.apsb.2020.01.014": [
+    {
+      "pred_value": "ADRA1A",
+      "labeled_value": "α1A-adrenergic receptor (α1A-AR)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1016/j.apsb.2020.11.009": [
+    {
+      "pred_value": "BCR-ABL T315I",
+      "labeled_value": "Bcr-AblT315I",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "VHL",
+      "feature": "Recruiter",
+      "result": "no"
+    },
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "cIAP1",
+      "feature": "Recruiter",
+      "result": "no"
+    }
+  ],
+  "10.1016/j.crchbi.2022.100029": [
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "Cereblon (CRBN)",
+      "feature": "Recruiter",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BTK",
+      "labeled_value": "IKZF1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BTK",
+      "labeled_value": "IKZF3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1016/j.isci.2023.107535": [
+    {
+      "pred_value": "CypA",
+      "labeled_value": "Cyclophilin A (CypA)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acs.jmedchem.1c02179": [
+    {
+      "pred_value": "HDAC3",
+      "labeled_value": "HDAC1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HDAC3",
+      "labeled_value": "HDAC2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HDAC1",
+      "labeled_value": "HDAC2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1021/acs.jmedchem.2c01817": [
+    {
+      "pred_value": "cIAP2",
+      "labeled_value": "cIAP1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "cIAP2",
+      "labeled_value": "XIAP",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "XIAP",
+      "labeled_value": "cIAP1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1021/acs.jmedchem.2c01843": [
+    {
+      "pred_value": "CA2",
+      "labeled_value": "hCAII",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acs.jmedchem.3c00851": [
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "HDAC6",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1021/acs.jmedchem.8b01413": [
+    {
+      "pred_value": "BRD9",
+      "labeled_value": "BRD7",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1021/acscentsci.0c00411": [
+    {
+      "pred_value": "KRAS G12C",
+      "labeled_value": "KRASG12C",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acscentsci.2c01369": [
+    {
+      "pred_value": "p-p38",
+      "labeled_value": "phosphorylated p38 MAPK (p-p38)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "p-p38",
+      "labeled_value": "p38 MAPK",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1021/acschemneuro.3c00096": [
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "CRBN (pomalidomide)",
+      "feature": "Recruiter",
+      "result": "yes"
+    }
+  ],
+  "10.1021/jacs.2c05499": [
+    {
+      "pred_value": "LRRK2 G2019S",
+      "labeled_value": "LRRK2",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41467-017-00954-1": [
+    {
+      "pred_value": "VHL",
+      "labeled_value": "pVHL30",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41467-018-08027-7": [
+    {
+      "pred_value": "p38alpha",
+      "labeled_value": "p38α",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "p38alpha",
+      "labeled_value": "p38δ",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-019-11429-w": [
+    {
+      "pred_value": "NS3",
+      "labeled_value": "HCV NS3",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41467-020-15838-0": [
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "CRBN (cereblon)",
+      "feature": "Recruiter",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41467-021-21159-7": [
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAF V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAF G469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAF V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-021-27210-x": [
+    {
+      "pred_value": "BCL2",
+      "labeled_value": "BCL-xL",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BCL2",
+      "labeled_value": "BCL-2",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BCL-xL",
+      "labeled_value": "BCL-2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-022-33430-6": [
+    {
+      "pred_value": "SMARCA4",
+      "labeled_value": "SMARCA2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-022-34562-5": [
+    {
+      "pred_value": "SMARCA4",
+      "labeled_value": "PBRM1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "SMARCA2",
+      "labeled_value": "PBRM1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-023-39904-5": [
+    {
+      "pred_value": "SMARCA2",
+      "labeled_value": "BRD4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-023-44237-4": [
+    {
+      "pred_value": "DCAF1",
+      "labeled_value": "VHL",
+      "feature": "Recruiter",
+      "result": "no"
+    },
+    {
+      "pred_value": "DCAF1",
+      "labeled_value": "CRBN",
+      "feature": "Recruiter",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD9",
+      "labeled_value": "BTK",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRD7",
+      "labeled_value": "BTK",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41589-018-0055-y": [
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "BRD4BD1",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "BRD4BD2",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRD4 BD1",
+      "labeled_value": "BRD4BD1",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "EGFP/mCherry reporter assay",
+      "labeled_value": "EGFP/mCherry reporter flow cytometry",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41589-019-0294-6": [
+    {
+      "pred_value": "MV4;11",
+      "labeled_value": "MV-4-11",
+      "feature": "Cell_Line",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41589-020-00652-y": [
+    {
+      "pred_value": "AURKA",
+      "labeled_value": "AURORA-A",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "CEREBLON",
+      "feature": "Recruiter",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s42003-018-0105-8": [
+    {
+      "pred_value": "AR",
+      "labeled_value": "Androgen receptor (AR)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s42003-020-0868-6": [
+    {
+      "pred_value": "IAP",
+      "labeled_value": "VHL",
+      "feature": "Recruiter",
+      "result": "no"
+    },
+    {
+      "pred_value": "IAP",
+      "labeled_value": "cereblon",
+      "feature": "Recruiter",
+      "result": "no"
+    },
+    {
+      "pred_value": "cIAP1",
+      "labeled_value": "IAP",
+      "feature": "Recruiter",
+      "result": "yes"
+    },
+    {
+      "pred_value": "cIAP1",
+      "labeled_value": "VHL",
+      "feature": "Recruiter",
+      "result": "no"
+    },
+    {
+      "pred_value": "cIAP1",
+      "labeled_value": "cereblon",
+      "feature": "Recruiter",
+      "result": "no"
+    },
+    {
+      "pred_value": "VHL",
+      "labeled_value": "cereblon",
+      "feature": "Recruiter",
+      "result": "no"
+    },
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "IAP",
+      "feature": "Recruiter",
+      "result": "no"
+    }
+  ],
+  "10.1039/d3sc04541b": [
+    {
+      "pred_value": "PTPN2",
+      "labeled_value": "TC-PTP",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1080/14756366.2020.1804382": [
+    {
+      "pred_value": "PARP1",
+      "labeled_value": "PARP-1",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1080/14756366.2022.2062338": [
+    {
+      "pred_value": "EGFR",
+      "labeled_value": "EGFRWT",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1186/s13045-022-01258-8": [
+    {
+      "pred_value": "MLLT1",
+      "labeled_value": "ENL",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MLLT1",
+      "labeled_value": "ENL (WT and mutant)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.3389/fchem.2023.1219883": [
+    {
+      "pred_value": "HSP90beta",
+      "labeled_value": "HSP90α",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HSP90beta",
+      "labeled_value": "HSP90β",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HSP90alpha",
+      "labeled_value": "HSP90α",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HSP90alpha",
+      "labeled_value": "HSP90β",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.3390/ijms242216290": [
+    {
+      "pred_value": "ERK1",
+      "labeled_value": "ERK1/2",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.3390/molecules28114458": [
+    {
+      "pred_value": "α-synuclein",
+      "labeled_value": "α-synuclein aggregates",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.7554/eLife.45457": [
+    {
+      "pred_value": "Tau",
+      "labeled_value": "Tau (total)",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Tau",
+      "labeled_value": "Tau (P-tau S396)",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1021/acs.jmedchem.6b01912": [
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "Brd4 short",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRD4",
+      "labeled_value": "Brd4 long",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1016/j.apsb.2023.01.014": [
+    {
+      "pred_value": "EBC-1",
+      "labeled_value": "Hs746T",
+      "feature": "Cell_Line",
+      "result": "no"
+    }
+  ]
+}

@@ -1,0 +1,1305 @@
+{
+  "_legacy": [],
+  "10.1021/acs.jmedchem.2c01149": [
+    {
+      "pred_value": "MSD",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "Q175 mouse cortical neuron",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "Neuro-2a +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "Neuro-2a -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "Q175 mouse cortical neuron -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "Jurkat +elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "Jurkat -elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "SH-SY5Y neuroblastoma -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1",
+      "labeled_value": "SH-SY5Y neuroblastoma +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (−elacridar pretreatment)",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (−elacridar pretreatment)",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (−elacridar pretreatment)",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (−elacridar pretreatment)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (+elacridar pretreatment)",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (+elacridar pretreatment)",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (+elacridar pretreatment)",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (+elacridar pretreatment)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD (−elacridar pretreatment)",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Neuro-2a",
+      "labeled_value": "Q175 mouse cortical neuron -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD (−elacridar pretreatment)",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Neuro-2a",
+      "labeled_value": "Neuro-2a +elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD (−elacridar pretreatment)",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Neuro-2a",
+      "labeled_value": "Neuro-2a -elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD (−elacridar pretreatment)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD (+elacridar pretreatment)",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD (+elacridar pretreatment)",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD (+elacridar pretreatment)",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD (+elacridar pretreatment)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neurons",
+      "labeled_value": "Q175 mouse cortical neuron -elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neurons",
+      "labeled_value": "Neuro-2a +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neurons",
+      "labeled_value": "Neuro-2a -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "SH-SY5Y",
+      "labeled_value": "Jurkat +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "SH-SY5Y",
+      "labeled_value": "Jurkat -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "SH-SY5Y",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "SH-SY5Y",
+      "labeled_value": "SH-SY5Y neuroblastoma -elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "SH-SY5Y",
+      "labeled_value": "SH-SY5Y neuroblastoma +elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Neuro-2a",
+      "labeled_value": "Q175 mouse cortical neuron",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neurons",
+      "labeled_value": "Q175 mouse cortical neuron",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Neuro-2a",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neurons",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (−elacridar)",
+      "labeled_value": "Jurkat +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (−elacridar)",
+      "labeled_value": "Jurkat -elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (−elacridar)",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (−elacridar)",
+      "labeled_value": "SH-SY5Y neuroblastoma -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (−elacridar)",
+      "labeled_value": "SH-SY5Y neuroblastoma +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (+elacridar)",
+      "labeled_value": "Jurkat +elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (+elacridar)",
+      "labeled_value": "Jurkat -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (+elacridar)",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (+elacridar)",
+      "labeled_value": "SH-SY5Y neuroblastoma -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Jurkat E6-1 (+elacridar)",
+      "labeled_value": "SH-SY5Y neuroblastoma +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Neuro-2a (−elacridar)",
+      "labeled_value": "Q175 mouse cortical neuron -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Neuro-2a (−elacridar)",
+      "labeled_value": "Neuro-2a +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Neuro-2a (−elacridar)",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Neuro-2a (−elacridar)",
+      "labeled_value": "Neuro-2a -elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Neuro-2a (+elacridar 10 μM pretreatment)",
+      "labeled_value": "Q175 mouse cortical neuron -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Neuro-2a (+elacridar 10 μM pretreatment)",
+      "labeled_value": "Neuro-2a +elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Neuro-2a (+elacridar 10 μM pretreatment)",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Neuro-2a (+elacridar 10 μM pretreatment)",
+      "labeled_value": "Neuro-2a -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neuron (−elacridar)",
+      "labeled_value": "Q175 mouse cortical neuron -elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neuron (−elacridar)",
+      "labeled_value": "Neuro-2a +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neuron (−elacridar)",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neuron (−elacridar)",
+      "labeled_value": "Neuro-2a -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD immunoassay",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD immunoassay",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD immunoassay",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD immunoassay",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (no elacridar pretreatment)",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (no elacridar pretreatment)",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (no elacridar pretreatment)",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (no elacridar pretreatment)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (+10 μM elacridar pretreatment, 1 h)",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (+10 μM elacridar pretreatment, 1 h)",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (+10 μM elacridar pretreatment, 1 h)",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (+10 μM elacridar pretreatment, 1 h)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD immunoassay (no elacridar pretreatment)",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD immunoassay (no elacridar pretreatment)",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD immunoassay (no elacridar pretreatment)",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD immunoassay (no elacridar pretreatment)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD immunoassay (+10 μM elacridar pretreatment, 1 h)",
+      "labeled_value": "MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD immunoassay (+10 μM elacridar pretreatment, 1 h)",
+      "labeled_value": "Western Blot(Immunoblot)",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "MSD immunoassay (+10 μM elacridar pretreatment, 1 h)",
+      "labeled_value": "ELISA-based MSD assay",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MSD immunoassay (+10 μM elacridar pretreatment, 1 h)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neuron",
+      "labeled_value": "Q175 mouse cortical neuron -elacridar",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neuron",
+      "labeled_value": "Neuro-2a +elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neuron",
+      "labeled_value": "Jurkat E6.1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Q175 mouse cortical neuron",
+      "labeled_value": "Neuro-2a -elacridar",
+      "feature": "Cell_Line",
+      "result": "no"
+    }
+  ],
+  "10.1021/acs.jmedchem.3c00851": [
+    {
+      "pred_value": "Western blot (densitometry)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acs.jmedchem.6b01912": [
+    {
+      "pred_value": "Western blot (immunoblot) densitometry",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HeLa",
+      "labeled_value": "HeLa cells",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Brd4 short",
+      "labeled_value": "Brd3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Brd4 short",
+      "labeled_value": "Brd4 long",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Brd4 short",
+      "labeled_value": "Brd2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Brd4 long",
+      "labeled_value": "Brd3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Brd4 long",
+      "labeled_value": "Brd2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Brd3",
+      "labeled_value": "Brd2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (immunoblot) quantification",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (immunoblot)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acs.jmedchem.2c01817": [
+    {
+      "pred_value": "cIAP1",
+      "labeled_value": "XIAP",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot densitometry",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "cIAP1",
+      "labeled_value": "cIAP2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "cIAP2",
+      "labeled_value": "XIAP",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-022-33430-6": [
+    {
+      "pred_value": "capillary electrophoresis (Wes)",
+      "labeled_value": "capillary electrophoresis",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "SMARCA2",
+      "labeled_value": "SMARCA4",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "RKO",
+      "labeled_value": "NCI-H1568",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "capillary electrophoresis protein assay",
+      "labeled_value": "capillary electrophoresis",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1021/jacs.9b13907": [
+    {
+      "pred_value": "Mino",
+      "labeled_value": "primary cells from chronic lymphocytic leukemia (CLL) patients",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "primary CLL cells",
+      "labeled_value": "primary cells from chronic lymphocytic leukemia (CLL) patients",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "primary CLL cells",
+      "labeled_value": "Mino",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "patient-derived primary CLL cells",
+      "labeled_value": "Mino",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "patient-derived primary CLL cells",
+      "labeled_value": "primary cells from chronic lymphocytic leukemia (CLL) patients",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (normalized to β-actin)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41589-019-0294-6": [
+    {
+      "pred_value": "MV-4-11",
+      "labeled_value": "NCI-H1568",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "MV-4-11",
+      "labeled_value": "SK-MEL-5",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "SMARCA2",
+      "labeled_value": "PBRM1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "SMARCA4",
+      "labeled_value": "PBRM1",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot",
+      "labeled_value": "capillary electrophoresis",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "SK-MEL-5",
+      "labeled_value": "NCI-H1568",
+      "feature": "Cell_Line",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-021-27210-x": [
+    {
+      "pred_value": "Western blot (immunoblot)",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BCL-xL",
+      "labeled_value": "BCL-2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (immunoblot) quantification",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "immunoblot (western blot densitometry)",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1038/s41467-021-21159-7": [
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF V600E",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "SK-MEL-28",
+      "labeled_value": "A375 xenograft",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF-p61V600E",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "SK-MEL-239 C4",
+      "labeled_value": "SK-MEL-28",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF-p61V600E",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF-p61V600E",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "SK-MEL-239 C4",
+      "labeled_value": "HCC-364 vr1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "SK-MEL-239 C4",
+      "labeled_value": "A375 xenograft",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "HCC-364 vr1",
+      "labeled_value": "SK-MEL-28",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "HCC-364 vr1",
+      "labeled_value": "A375 xenograft",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G469A",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "CAL-12-T",
+      "labeled_value": "H1666",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF G466V",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "In vivo tumor immunoblot (Western blot)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRAFV600E",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAFV600E",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "p61-BRAFV600E",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "p61-BRAFV600E",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "p61-BRAFV600E",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "p61-BRAFV600E",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRAFG469A",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF",
+      "labeled_value": "BRAFV600E",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BRAF",
+      "labeled_value": "BRAFG469A",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF",
+      "labeled_value": "BRAFG466V",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "BRAF",
+      "labeled_value": "BRAF-p61V600E",
+      "feature": "Degradation_Target",
+      "result": "no"
+    }
+  ],
+  "10.1038/s41467-023-44237-4": [
+    {
+      "pred_value": "immunoblot (western blot)",
+      "labeled_value": "HiBiT",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "immunoblot (western blot)",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HEK293 BRD9-HiBiT/FF/CAS9",
+      "labeled_value": "HEK293",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HiBiT luminescence",
+      "labeled_value": "HiBiT",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HEK293/BRD9-HiBiT",
+      "labeled_value": "HEK293",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HEK293/BRD9-HiBiT",
+      "labeled_value": "HEK293 BRD9-HiBiT/CAS9/FF",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HiBiT luminescence",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBiT luminescence (Firefly-normalized)",
+      "labeled_value": "HiBiT",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HEK293 BRD9-HiBiT/CAS9/FF",
+      "labeled_value": "HEK293",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HiBiT luminescence (Firefly-normalized)",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "flow cytometry (BTK-GFP/mCherry ratiometric)",
+      "labeled_value": "Flow cytometry",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "TMD8 BTK-GFP/mCh",
+      "labeled_value": "TMD8 BTK-GFP/mCherry",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HEK293 BRD9-HiBiT/FF/CAS9",
+      "labeled_value": "HEK293 BRD9-HiBiT/CAS9/FF",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "BTK-GFP/mCherry ratiometric flow cytometry",
+      "labeled_value": "Flow cytometry",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Immunoblot",
+      "labeled_value": "HiBiT",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBiT luminescence (BRD9-HiBiT)",
+      "labeled_value": "HiBiT",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HEK293 BRD9-HiBiT",
+      "labeled_value": "HEK293",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HEK293 BRD9-HiBiT",
+      "labeled_value": "HEK293 BRD9-HiBiT/CAS9/FF",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HiBiT luminescence (BRD9-HiBiT)",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "HiBiT luminescence (BRD9-HiBiT/FF/CAS9)",
+      "labeled_value": "HiBiT",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HiBiT luminescence (BRD9-HiBiT/FF/CAS9)",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "Flow cytometry (BTK-GFP/mCherry ratio)",
+      "labeled_value": "Flow cytometry",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1021/acscentsci.2c01369": [
+    {
+      "pred_value": "phosphorylated p38 MAPK (p-p38)",
+      "labeled_value": "p-p38",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "immunoblotting (Western blot)",
+      "labeled_value": "Immunoblotting",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "phosphorylated p38 MAPK (p-p38)",
+      "labeled_value": "Flag-tagged p38",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "p38 MAPK",
+      "labeled_value": "p-p38",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "p38 MAPK",
+      "labeled_value": "Flag-tagged p38",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "p-p38 (phosphorylated p38 MAPK)",
+      "labeled_value": "p-p38",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    },
+    {
+      "pred_value": "p-p38 (phosphorylated p38 MAPK)",
+      "labeled_value": "Flag-tagged p38",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "HEK293T (Flag-p38 overexpression)",
+      "labeled_value": "HEK293T",
+      "feature": "Cell_Line",
+      "result": "yes"
+    },
+    {
+      "pred_value": "p38 MAPK (Flag-tagged)",
+      "labeled_value": "p-p38",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "p38 MAPK (Flag-tagged)",
+      "labeled_value": "Flag-tagged p38",
+      "feature": "Degradation_Target",
+      "result": "yes"
+    }
+  ],
+  "10.1002/anie.201914396": [
+    {
+      "pred_value": "Brd4",
+      "labeled_value": "Brd2",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Brd4",
+      "labeled_value": "Brd3",
+      "feature": "Degradation_Target",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (SDS-PAGE)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "HeLa",
+      "labeled_value": "22RV1",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blotting (SDS-PAGE)",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "western blotting",
+      "labeled_value": "Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1002/anie.202101864": [
+    {
+      "pred_value": "CRBN",
+      "labeled_value": "Cereblon",
+      "feature": "Recruiter",
+      "result": "yes"
+    },
+    {
+      "pred_value": "western blot",
+      "labeled_value": "ELISA",
+      "feature": "Assay",
+      "result": "no"
+    },
+    {
+      "pred_value": "HEK293",
+      "labeled_value": "A549",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "western blot",
+      "labeled_value": "ELISA + Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "cereblon (CRBN)",
+      "labeled_value": "Cereblon",
+      "feature": "Recruiter",
+      "result": "yes"
+    },
+    {
+      "pred_value": "ELISA and western blot",
+      "labeled_value": "ELISA + Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "ELISA",
+      "labeled_value": "ELISA + Western Blot",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ],
+  "10.1016/j.apsb.2023.01.014": [
+    {
+      "pred_value": "EBC-1",
+      "labeled_value": "Hs746T",
+      "feature": "Cell_Line",
+      "result": "no"
+    }
+  ],
+  "10.1126/scitranslmed.abj1578": [
+    {
+      "pred_value": "Western blot (immunoblot), densitometry (ImageJ)",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "MIA PaCa-2",
+      "labeled_value": "MV4;11",
+      "feature": "Cell_Line",
+      "result": "no"
+    },
+    {
+      "pred_value": "Western blot (immunoblot) densitometry",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "yes"
+    },
+    {
+      "pred_value": "Western blot (immunoblot) with densitometry (ImageJ)",
+      "labeled_value": "Immunoblot",
+      "feature": "Assay",
+      "result": "yes"
+    }
+  ]
+}

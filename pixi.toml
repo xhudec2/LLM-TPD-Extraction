@@ -1,0 +1,33 @@
+[workspace]
+channels = ["conda-forge"]
+name = "tpd_curator"
+platforms = ["linux-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.10.*"
+Pillow = ">=10.1.0,<11.0.0"
+matplotlib = "*"
+seaborn = "*"
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+langchain = ">=0.3,<0.4"
+langchain-core = ">=0.3,<0.4"
+langchain-community = ">=0.3.20,<0.4"
+ipykernel = ">=6.29.5,<7"
+rdkit = ">=2025.3.2,<2026"
+pubchempy = ">=1.0.5,<2"
+tqdm = "*"
+pyyaml = "*"
+
+[pypi-dependencies]
+marker-pdf = ">=1.6.2, <2"
+python-dotenv = "*"
+pydantic = "*"
+python-docx = ">=1.2.0, <2"
+openpyxl = ">=3.1.5, <4"
+xlrd = ">=2.0.2, <3"
+chembl-webresource-client = ">=0.10.9, <0.11"
