@@ -2,7 +2,7 @@
 
 LLM-assisted literature extraction workflow for augmenting targeted protein degradation (TPD) databases.
 
-This repository accompanies the paper: **Beyond Manual Curation: Augmenting Targeted Protein Degradation Databases via Agentic Literature Extraction Workflows**
+This repository accompanies the paper ``Beyond Manual Curation: Augmenting Targeted Protein Degradation Databases via Agentic Literature Extraction Workflows.''
 
 The workflow extracts structured degradation assay records from full-text articles and supplementary materials, with fields covering compound identity, degradation target, recruiter, assay context, and quantitative endpoints such as DC50 and Dmax.
 
