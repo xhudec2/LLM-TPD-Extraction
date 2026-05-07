@@ -1,4 +1,4 @@
-# TPD Curator
+# LLM-TPD-Extraction
 
 LLM-assisted literature extraction workflow for augmenting targeted protein degradation (TPD) databases.
 
@@ -24,7 +24,7 @@ TPD assay records are often distributed across main text, tables, and supplement
 ## Repository structure
 
 ```
-tpd_curator/
+LLM-TPD-Extraction/
 ├── tpd_curator/                       # Python package
 │   ├── pipeline.py                    # Core workflow: extraction, post-processing, matching, and evaluation
 │   ├── capo.py                        # CAPO prompt-refinement loop
@@ -61,10 +61,9 @@ tpd_curator/
 - ~2 GB disk for the Python environment
 
 ### Setup
-
 ```bash
-git clone https://github.com/yaochenr/TPD_Curator.git
-cd TPD_Curator
+git clone https://github.com/yaochenr/LLM-TPD-Extraction.git
+cd LLM-TPD-Extraction
 pixi install
 ```
 
