@@ -10,6 +10,7 @@ from tpd_curator.pipeline import *
 
 class TeeLogger:
     """A class that writes to both file and stdout/stderr"""
+
     def __init__(self, log_file, stream):
         self.log_file = log_file
         self.stream = stream
@@ -28,15 +29,15 @@ def setup_logging(results_dir: Path):
     """Setup logging to write to both console and log file in results directory"""
     log_file_path = results_dir / "pipeline_run.log"
 
-    log_file = open(log_file_path, 'w', encoding='utf-8', buffering=1)
+    log_file = open(log_file_path, "w", encoding="utf-8", buffering=1)
 
     sys.stdout = TeeLogger(log_file, sys.__stdout__)
     sys.stderr = TeeLogger(log_file, sys.__stderr__)
 
-    print(f"{'='*80}")
+    print(f"{'=' * 80}")
     print(f"Pipeline Run Log - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"Log file: {log_file_path}")
-    print(f"{'='*80}\n")
+    print(f"{'=' * 80}\n")
 
     return log_file
 
@@ -73,18 +74,19 @@ def main(args):
             except Exception as e:
                 print(f"Data cleaning failed: {str(e)}")
                 import traceback
+
                 traceback.print_exc()
                 return
         else:
             print("Skip data cleaning step.")
 
-
-
         input_prompt_content = None
         if args.input_prompt:
             prompt_path = Path(args.input_prompt)
             if not prompt_path.exists():
-                print(f"Error: The specified markdown file does not exist - {args.input_prompt}")
+                print(
+                    f"Error: The specified markdown file does not exist - {args.input_prompt}"
+                )
                 return
             with open(prompt_path, "r", encoding="utf-8") as f:
                 input_prompt_content = f.read()
@@ -95,13 +97,21 @@ def main(args):
             try:
                 if args.with_history:
                     print("Using LLM API with memory history.")
-                    run_llm_pipeline(config_file, read_papers=True, md_prompt=input_prompt_content, with_history=True)
+                    run_llm_pipeline(
+                        config_file,
+                        read_papers=True,
+                        md_prompt=input_prompt_content,
+                        with_history=True,
+                    )
                 else:
                     print("Using LLM API without memory history.")
-                    run_llm_pipeline(config_file, read_papers=True, md_prompt=input_prompt_content)
+                    run_llm_pipeline(
+                        config_file, read_papers=True, md_prompt=input_prompt_content
+                    )
             except Exception as e:
                 print(f"Reasoning failed: {str(e)}")
                 import traceback
+
                 traceback.print_exc()
                 return
         else:
@@ -110,10 +120,13 @@ def main(args):
         csv_file_path = None
         if args.csv:
             try:
-                csv_file_path = save_csv(config_file=config_file, results_dir=args.results_dir)
+                csv_file_path = save_csv(
+                    config_file=config_file, results_dir=args.results_dir
+                )
             except Exception as e:
                 print(f"Save CSV failed: {str(e)}")
                 import traceback
+
                 traceback.print_exc()
                 return
         else:
@@ -122,17 +135,20 @@ def main(args):
         if csv_file_path:
             try:
                 processed_csv_path = process_units(csv_file_path)
-                print(f"Finish processing the units and save the results in: {processed_csv_path}")
+                print(
+                    f"Finish processing the units and save the results in: {processed_csv_path}"
+                )
             except Exception as e:
                 print(f"Fail to process units: {str(e)}")
                 import traceback
+
                 traceback.print_exc()
         else:
             print("Skip processing concentration units.")
 
         if args.smiles:
             print("\nFetching SMILES from multiple sources...")
-            if locals().get('processed_csv_path'):
+            if locals().get("processed_csv_path"):
                 try:
                     use_chembl = not args.no_chembl
                     sources = "PubChem + ChEMBL" if use_chembl else "PubChem only"
@@ -142,12 +158,13 @@ def main(args):
                         csv_file_path=processed_csv_path,
                         use_chembl=use_chembl,
                         rate_limit_pubchem=0.2,
-                        rate_limit_chembl=0.5
+                        rate_limit_chembl=0.5,
                     )
                     print(f"✓ Added SMILES to: {smiles_csv_path}")
                 except Exception as e:
                     print(f"✗ SMILES fetch failed: {e}")
                     import traceback
+
                     traceback.print_exc()
             else:
                 print("Skip SMILES fetch: no processed CSV file available")
@@ -159,7 +176,11 @@ def main(args):
                 if args.pred:
                     pred_csv_path = args.pred
                 else:
-                    pred_csv_path = processed_csv_path if locals().get('processed_csv_path') else None
+                    pred_csv_path = (
+                        processed_csv_path
+                        if locals().get("processed_csv_path")
+                        else None
+                    )
 
                 labeled_csv_path = args.labeled if args.labeled else None
 
@@ -169,14 +190,17 @@ def main(args):
                     labeled_csv_path=labeled_csv_path,
                     lenient_mode=args.lenient_mode,
                     output_dir=args.eval_output_dir,
-                    ternary_complex_level=args.ternary_complex_level
+                    ternary_complex_level=args.ternary_complex_level,
                 )
 
                 if not eval_results:
-                    print("Evaluation could not be completed; please check the config and data files.")
+                    print(
+                        "Evaluation could not be completed; please check the config and data files."
+                    )
             except Exception as e:
                 print(f"Error while computing accuracy: {str(e)}")
                 import traceback
+
                 traceback.print_exc()
         else:
             print("Skip calculating extraction accuracy.")
@@ -187,7 +211,11 @@ def main(args):
                 if args.pred:
                     llm_csv_path = args.pred
                 else:
-                    llm_csv_path = processed_csv_path if locals().get('processed_csv_path') else None
+                    llm_csv_path = (
+                        processed_csv_path
+                        if locals().get("processed_csv_path")
+                        else None
+                    )
 
                 baseline_csv_path = args.baseline if args.baseline else None
 
@@ -199,68 +227,147 @@ def main(args):
                 )
 
                 if not eval_results:
-                    print("LLM vs Baseline evaluation failed. Please check configuration and data files.")
+                    print(
+                        "LLM vs Baseline evaluation failed. Please check configuration and data files."
+                    )
             except Exception as e:
                 print(f"LLM vs Baseline evaluation error: {str(e)}")
                 import traceback
+
                 traceback.print_exc()
         else:
             print("Skip LLM vs Baseline evaluation.")
 
-        print(f"\n{'='*80}")
-        print(f"PIPELINE EXECUTION COMPLETED")
-        print(f"{'='*80}")
+        print(f"\n{'=' * 80}")
+        print("PIPELINE EXECUTION COMPLETED")
+        print(f"{'=' * 80}")
         print(f"Results saved in: {results_dir}")
         print(f"Log file: {results_dir / 'pipeline_run.log'}")
         print(f"Execution finished at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        print(f"{'='*80}\n")
+        print(f"{'=' * 80}\n")
 
     except Exception as e:
-        print(f"\n{'='*80}")
-        print(f"PIPELINE EXECUTION FAILED")
-        print(f"{'='*80}")
+        print(f"\n{'=' * 80}")
+        print("PIPELINE EXECUTION FAILED")
+        print(f"{'=' * 80}")
         print(f"Error: {str(e)}")
         import traceback
+
         traceback.print_exc()
-        print(f"{'='*80}\n")
+        print(f"{'=' * 80}\n")
     finally:
-        if 'log_file' in locals():
+        if "log_file" in locals():
             log_file.close()
         sys.stdout = sys.__stdout__
         sys.stderr = sys.__stderr__
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     freeze_support()
 
-    parser = argparse.ArgumentParser(description="Run molecular glue data extraction pipeline.")
-    parser.add_argument("--config_path", type=str, required=True, help="Path of the config file.")
-    parser.add_argument("--convert", action="store_true", help="Whether to execute PDF conversion.")
-    parser.add_argument("--cleaning", action="store_true", help="Clean the converted data and save it to JSONL file.")
+    parser = argparse.ArgumentParser(
+        description="Run molecular glue data extraction pipeline."
+    )
+    parser.add_argument(
+        "--config_path", type=str, required=True, help="Path of the config file."
+    )
+    parser.add_argument(
+        "--convert", action="store_true", help="Whether to execute PDF conversion."
+    )
+    parser.add_argument(
+        "--cleaning",
+        action="store_true",
+        help="Clean the converted data and save it to JSONL file.",
+    )
     parser.add_argument("--llm", action="store_true", help="Using LLM to reason.")
-    parser.add_argument("--with_history", action="store_true", help="Use LLM API with memory history.")
-    parser.add_argument("--csv", action="store_true", help="Save all LLM output to a CSV file.")
-    parser.add_argument("--accuracy", action="store_true", help="Calculate the accuracy of the extraction results.")
-    parser.add_argument("--llm_vs_baseline", action="store_true", help="Compare LLM extraction results against a baseline CSV using the same evaluation logic as --accuracy.")
-    parser.add_argument("--baseline", type=str, help="Baseline CSV file path for --llm_vs_baseline (optional, will use evaluation.baseline_data_path in config by default)")
-    parser.add_argument("--lenient_mode", action="store_true", help="Use lenient evaluation mode (allows Assay/Cell_Line to be empty in predictions)")
-    parser.add_argument("--ternary_complex_level", action="store_true",
-                       help="Evaluate at ternary complex level: record key = {Compound_Name, Degradation_Target, Recruiter}; field evaluation adds Assay and Cell_Line.")
-    parser.add_argument("--use_api", action="store_true", help="Use OpenRouter API (kept for compatibility; API is the only supported backend).")
-    parser.add_argument("--pred", type=str, help="Prediction CSV file path (optional, will use the latest processed CSV by default)")
-    parser.add_argument("--labeled", type=str, help="Labeled CSV file path (optional, will use the path specified in config by default)")
-    parser.add_argument("--input_prompt", type=str, help="Input LLM prompt from a Markdown file. In Active Prompting mode, this serves as the initial prompt for optimization.")
-    parser.add_argument("--pmc", action="store_true", help="Process PMC data instead of PDFs.")
-    parser.add_argument("--data_type", type=str, choices=["pdf", "pmc", "auto"], default="auto",
-                       help="Specify data type to process (pdf, pmc, or auto-detect).")
-    parser.add_argument("--results_dir", type=str, help="Specify results directory to process (e.g., /path/to/results/251024_1640). If not specified, uses the latest results directory.")
-    parser.add_argument("--eval_output_dir", type=str, help="Specify output directory for evaluation result files (JSON, detailed results, need_review). Defaults to the same directory as --pred.")
-    parser.add_argument("--smiles", action="store_true", help="Fetch SMILES representations from PubChem and ChEMBL based on IUPAC names or compound names.")
-    parser.add_argument("--no-chembl", action="store_true", help="Skip ChEMBL queries (only use PubChem for SMILES lookup).")
+    parser.add_argument(
+        "--with_history", action="store_true", help="Use LLM API with memory history."
+    )
+    parser.add_argument(
+        "--csv", action="store_true", help="Save all LLM output to a CSV file."
+    )
+    parser.add_argument(
+        "--accuracy",
+        action="store_true",
+        help="Calculate the accuracy of the extraction results.",
+    )
+    parser.add_argument(
+        "--llm_vs_baseline",
+        action="store_true",
+        help="Compare LLM extraction results against a baseline CSV using the same evaluation logic as --accuracy.",
+    )
+    parser.add_argument(
+        "--baseline",
+        type=str,
+        help="Baseline CSV file path for --llm_vs_baseline (optional, will use evaluation.baseline_data_path in config by default)",
+    )
+    parser.add_argument(
+        "--lenient_mode",
+        action="store_true",
+        help="Use lenient evaluation mode (allows Assay/Cell_Line to be empty in predictions)",
+    )
+    parser.add_argument(
+        "--ternary_complex_level",
+        action="store_true",
+        help="Evaluate at ternary complex level: record key = {Compound_Name, Degradation_Target, Recruiter}; field evaluation adds Assay and Cell_Line.",
+    )
+    parser.add_argument(
+        "--use_api",
+        action="store_true",
+        help="Use OpenRouter API (kept for compatibility; API is the only supported backend).",
+    )
+    parser.add_argument(
+        "--pred",
+        type=str,
+        help="Prediction CSV file path (optional, will use the latest processed CSV by default)",
+    )
+    parser.add_argument(
+        "--labeled",
+        type=str,
+        help="Labeled CSV file path (optional, will use the path specified in config by default)",
+    )
+    parser.add_argument(
+        "--input_prompt",
+        type=str,
+        help="Input LLM prompt from a Markdown file. In Active Prompting mode, this serves as the initial prompt for optimization.",
+    )
+    parser.add_argument(
+        "--pmc", action="store_true", help="Process PMC data instead of PDFs."
+    )
+    parser.add_argument(
+        "--data_type",
+        type=str,
+        choices=["pdf", "pmc", "auto"],
+        default="auto",
+        help="Specify data type to process (pdf, pmc, or auto-detect).",
+    )
+    parser.add_argument(
+        "--results_dir",
+        type=str,
+        help="Specify results directory to process (e.g., /path/to/results/251024_1640). If not specified, uses the latest results directory.",
+    )
+    parser.add_argument(
+        "--eval_output_dir",
+        type=str,
+        help="Specify output directory for evaluation result files (JSON, detailed results, need_review). Defaults to the same directory as --pred.",
+    )
+    parser.add_argument(
+        "--smiles",
+        action="store_true",
+        help="Fetch SMILES representations from PubChem and ChEMBL based on IUPAC names or compound names.",
+    )
+    parser.add_argument(
+        "--no-chembl",
+        action="store_true",
+        help="Skip ChEMBL queries (only use PubChem for SMILES lookup).",
+    )
 
     args = parser.parse_args()
-    
+
     if not Path(args.config_path).exists():
-        print(f"Error: The specified configuration file does not exist - {args.config_path}")
+        print(
+            f"Error: The specified configuration file does not exist - {args.config_path}"
+        )
         exit(1)
 
     main(args)

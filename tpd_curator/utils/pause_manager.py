@@ -10,6 +10,7 @@ from pathlib import Path
 @dataclass
 class PauseState:
     """State information needed to resume a paused pipeline execution"""
+
     paper_doi: str
     round: int
     results_dir: str
@@ -27,7 +28,7 @@ class PauseState:
         return asdict(self)
 
     @classmethod
-    def from_dict(cls, data: Dict[str, Any]) -> 'PauseState':
+    def from_dict(cls, data: Dict[str, Any]) -> "PauseState":
         return cls(**data)
 
 
@@ -43,7 +44,7 @@ class PauseManager:
     def save_pause_state(self, state: PauseState) -> None:
         os.makedirs(self.results_dir, exist_ok=True)
 
-        with open(self.state_file_path, 'w', encoding='utf-8') as f:
+        with open(self.state_file_path, "w", encoding="utf-8") as f:
             json.dump(state.to_dict(), f, indent=2, ensure_ascii=False)
 
         print(f"\n[PAUSE STATE SAVED] {self.state_file_path}")
@@ -53,7 +54,7 @@ class PauseManager:
             return None
 
         try:
-            with open(self.state_file_path, 'r', encoding='utf-8') as f:
+            with open(self.state_file_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
             state = PauseState.from_dict(data)
@@ -85,7 +86,7 @@ def create_pause_state(
     input_prompt_path: str,
     cache_file_path: str,
     phase: str,
-    paper_index: int
+    paper_index: int,
 ) -> PauseState:
     from datetime import datetime
 
@@ -102,7 +103,7 @@ def create_pause_state(
         cache_file_path=cache_file_path,
         phase=phase,
         paper_index=paper_index,
-        timestamp=timestamp
+        timestamp=timestamp,
     )
 
 
@@ -116,7 +117,7 @@ def create_pause_state_for_batch(
     paper_index_in_batch: int,
     completed_papers: List[Dict],
     batch_papers: List[Dict],
-    prompt_version: int
+    prompt_version: int,
 ) -> PauseState:
     from datetime import datetime
 
@@ -143,5 +144,5 @@ def create_pause_state_for_batch(
         phase="batch_active",
         paper_index=paper_index_in_batch,
         timestamp=timestamp,
-        batch_info=batch_info
+        batch_info=batch_info,
     )

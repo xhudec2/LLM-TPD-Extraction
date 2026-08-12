@@ -2,7 +2,7 @@ from marker.converters.pdf import PdfConverter
 from marker.models import create_model_dict
 from marker.output import text_from_rendered
 import os
-import json
+
 
 def convert_pdf_to_md(config_parser, paper_path, output_dir, save_images=False):
     print("Start converting PDF to markdown...")
@@ -12,7 +12,7 @@ def convert_pdf_to_md(config_parser, paper_path, output_dir, save_images=False):
         artifact_dict=create_model_dict(),
         processor_list=config_parser.get_processors(),
         renderer=config_parser.get_renderer(),
-        llm_service=config_parser.get_llm_service()
+        llm_service=config_parser.get_llm_service(),
     )
 
     if os.path.isfile(paper_path):
@@ -29,7 +29,6 @@ def convert_pdf_to_md(config_parser, paper_path, output_dir, save_images=False):
         if save_images:
             for image_name, img in images.items():
                 img.save(os.path.join(output_dir, image_name), "JPEG")
-
 
     elif os.path.isdir(paper_path):
         for root, _, files in os.walk(paper_path):
@@ -50,4 +49,6 @@ def convert_pdf_to_md(config_parser, paper_path, output_dir, save_images=False):
                         for image_name, img in images.items():
                             img.save(os.path.join(pdf_output_dir, image_name), "JPEG")
     else:
-        print("The input path is invalid, please check if it is the correct file or folder path.")
+        print(
+            "The input path is invalid, please check if it is the correct file or folder path."
+        )
