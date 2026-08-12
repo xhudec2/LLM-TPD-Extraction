@@ -14,7 +14,7 @@ from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.messages import BaseMessage
 from pydantic import BaseModel, Field
 
-from .llm.run_llm_api import *
+from .llm.run_llm_api import construct_prompt, run_llm_api, run_llm_api_with_history
 from .preprocessing.data_cleaning import clean_json_data
 
 try:
@@ -2663,8 +2663,6 @@ def evaluate_record_based_accuracy(
         print(f"{'=' * 60}")
 
         if ternary_complex_level:
-            record_fields = ["Compound_Name", "Degradation_Target", "Recruiter"]
-            semantic_record_fields = ["Degradation_Target", "Recruiter"]
             assay_fields = [
                 "Assay",
                 "Cell_Line",
@@ -2677,19 +2675,6 @@ def evaluate_record_based_accuracy(
             ]
             tiebreak_fields_for_score = ["Cell_Line", "Assay"]
         else:
-            record_fields = [
-                "Compound_Name",
-                "Degradation_Target",
-                "Recruiter",
-                "Assay",
-                "Cell_Line",
-            ]
-            semantic_record_fields = [
-                "Degradation_Target",
-                "Recruiter",
-                "Assay",
-                "Cell_Line",
-            ]
             assay_fields = [
                 "DC50",
                 "DC50_units",
@@ -3039,7 +3024,6 @@ def evaluate_record_based_accuracy(
                 ]
 
                 found_match = False
-                matched_label_idx = None
 
                 if len(available_candidates) == 0:
                     doi_fp += 1
@@ -3092,13 +3076,11 @@ def evaluate_record_based_accuracy(
                         )
                         if assay_score > 0:
                             found_match = True
-                            matched_label_idx = label_idx
                             successfully_matched_label_indices.add(label_idx)
                         else:
                             pass
                     else:
                         found_match = True
-                        matched_label_idx = label_idx
                         successfully_matched_label_indices.add(label_idx)
 
                     if found_match:
@@ -3158,7 +3140,6 @@ def evaluate_record_based_accuracy(
                         if max_score > 0:
                             label_idx, label_row = best_candidate
                             found_match = True
-                            matched_label_idx = label_idx
                             successfully_matched_label_indices.add(label_idx)
                             matched_record_id = (
                                 label_row["Record_ID"]
@@ -3248,7 +3229,6 @@ def evaluate_record_based_accuracy(
 
                         label_idx, label_row = best_candidate
                         found_match = True
-                        matched_label_idx = label_idx
                         successfully_matched_label_indices.add(label_idx)
 
                         matched_record_id = (
@@ -3633,7 +3613,6 @@ def evaluate_record_based_accuracy(
             field_tp = field_metrics["tp"]
             field_fp = field_metrics["fp"]
             field_fn = field_metrics["fn"]
-            field_tn = field_metrics["tn"]
 
             field_precision = (
                 field_tp / (field_tp + field_fp) if (field_tp + field_fp) > 0 else 0
@@ -3659,7 +3638,6 @@ def evaluate_record_based_accuracy(
             doi_tp = doi_metrics["total_tp"]
             doi_fp = doi_metrics["total_fp"]
             doi_fn = doi_metrics["total_fn"]
-            doi_tn = doi_metrics["total_tn"]
 
             doi_precision = doi_tp / (doi_tp + doi_fp) if (doi_tp + doi_fp) > 0 else 0
             doi_recall = doi_tp / (doi_tp + doi_fn) if (doi_tp + doi_fn) > 0 else 0

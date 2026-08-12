@@ -479,7 +479,6 @@ def print_summary(stats: Dict, output_dir: Path):
     print()
 
     final_metrics = stats["final_metrics"]
-    first_metrics = stats["first_metrics"]
     improvements = stats["improvements"]
 
     print(f"Final Metrics (Round {rounds_range[1]}):")

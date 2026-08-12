@@ -1627,10 +1627,9 @@ Accoding to above information, analyze the root causes of the errors. Summarize 
 
         eval_file = paper_dir / "record_based_evaluation_results.json"
         if eval_file.exists():
-            evaluation = json.loads(eval_file.read_text())
+            _ = json.loads(eval_file.read_text())
         else:
             print("    Warning: No record_based_evaluation_results.json found")
-            evaluation = {}
 
         detailed_eval_file = paper_dir / "evaluation_detailed_by_doi.json"
         detailed_evaluation = {}
@@ -1797,22 +1796,19 @@ Accoding to above information, analyze the root causes of the errors. Summarize 
             "---\n",
         ]
 
-        for paper_index, (doi, data) in enumerate(all_analyses.items(), start=1):
-            metrics = data["metrics"]
+        for paper_index, (_, data) in enumerate(all_analyses.items(), start=1):
             analysis = data["analysis"]
             paper_dir = Path(data["paper_dir"])
 
             eval_file = paper_dir / "record_based_evaluation_results.json"
-            evaluation = {}
             if eval_file.exists():
                 try:
                     with open(eval_file, "r", encoding="utf-8") as f:
-                        evaluation = json.load(f)
+                        _ = json.load(f)
                 except Exception as e:
                     print(
                         f"  Warning: Failed to load evaluation for Paper {paper_index}: {e}"
                     )
-                    evaluation = {}
             else:
                 print(
                     f"  Warning: Evaluation file not found for Paper {paper_index}: {eval_file}"
