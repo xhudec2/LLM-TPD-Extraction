@@ -1,18 +1,21 @@
+import csv
+import json
 import os
 import re
-import json
-import yaml
-from pathlib import Path
-from datetime import datetime
-from typing import Any, Dict, List, Set, Tuple, Union
-import pandas as pd
 import time
-import csv
+from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Set, Tuple, Union
+
+import pandas as pd
 import pubchempy as pcp
+import yaml
+from langchain_core.chat_history import BaseChatMessageHistory
+from langchain_core.messages import BaseMessage
+from pydantic import BaseModel, Field
 
-
-from .preprocessing.data_cleaning import clean_json_data
 from .llm.run_llm_api import *
+from .preprocessing.data_cleaning import clean_json_data
 
 try:
     from docx import Document
@@ -313,11 +316,11 @@ def read_docx_file(file_path: Union[str, Path]) -> str:
 
 
 def _contains_relevant_keywords(content: str) -> bool:
-    """Check if content contains any of the relevant keywords: DC50, Dmax"""
+    """Check if content contains any of the relevant keywords: PAMPA, Papp, Pe"""
     if not content:
         return False
 
-    keywords_pattern = r"\b(DC50|Dmax)\b"
+    keywords_pattern = r"\b(PAMPA|Papp|Pe)\b"
 
     match = re.search(keywords_pattern, content, re.IGNORECASE)
 
@@ -826,16 +829,12 @@ def run_llm_pipeline(
                         '"Compound_Name":"...",'
                         '"IUPAC_Name":"...",'
                         '"SMILES":"...",'
-                        '"Degradation_Target":"...",'
-                        '"Recruiter":"...",'
                         '"Assay":"...",'
-                        '"Cell_Line":"...",'
-                        '"DC50":"...",'
-                        '"DC50_units":"...",'
-                        '"DC50_h":"...",'
-                        '"Dmax":"...",'
-                        '"Dmax_h":"...",'
-                        '"Dmax_conc":"..."'
+                        '"Permeability_Metric":"...",'
+                        '"Papp":"...",'
+                        '"Papp_units":"...",'
+                        '"Figure":"...",'
+                        '"Notes":"..."'
                         "},"
                         '"source_sentence":"..."}]'
                     )
@@ -869,7 +868,7 @@ def run_llm_pipeline(
 
                     if filter_by_keywords:
                         print(
-                            "Filtering supplementary files by keywords (DC50, Dmax)..."
+                            "Filtering supplementary files by keywords (PAMPA, Papp, Pe)..."
                         )
                     else:
                         print(
@@ -911,13 +910,13 @@ def run_llm_pipeline(
 Please carefully examine this supplementary file and:
 1. Look for IUPAC names, SMILES strings, or full chemical names for compounds you previously extracted (e.g., if you extracted "compound 5", look for its IUPAC name, SMILES string, or chemical structure name)
 2. For each compound where you find an IUPAC name or SMILES:
-   - Keep all other fields (Compound_Name, Degradation_Target, DC50, Dmax, etc.) EXACTLY the same as your previous extraction
+    - Keep all other fields (Compound_Name, Assay, Permeability_Metric, Papp, Papp_units, Figure, Notes, etc.) EXACTLY the same as your previous extraction
    - ONLY fill in or update the IUPAC_Name and SMILES fields
    - This helps match compounds across different parts of the paper
 
 **Secondary Task: Extract Any New Compound Data**
-3. If you find any NEW molecular glue degradation data that was NOT in your previous extraction, extract it completely
-4. Include any additional compounds, assays, or cell lines found in this file
+3. If you find any NEW PAMPA permeability data that was NOT in your previous extraction, extract it completely
+4. Include any additional compounds, assays, or PAMPA conditions found in this file
 
 **Important Notes:**
 - When updating existing compounds with IUPAC names or SMILES, preserve all original data
@@ -932,10 +931,10 @@ If no additional data or IUPAC names are found in this file, return an empty arr
 Question: Are there any data points you missed in the first extraction?
 
 Please carefully examine this supplementary file and:
-1. Identify any molecular glue degradation data that was NOT in your previous extraction
-2. Extract any missing fields (DC50, Dmax, Cell_Line, Assay, etc.) that can now be filled
+1. Identify any PAMPA permeability data that was NOT in your previous extraction
+2. Extract any missing fields (Assay, Permeability_Metric, Papp, Papp_units, Figure, Notes, etc.) that can now be filled
 3. Look for IUPAC names, SMILES strings, or full chemical names for compounds you previously extracted
-4. Include any new compounds, assays, or cell lines found in this file
+4. Include any new compounds, assays, or PAMPA conditions found in this file
 
 **Important for IUPAC Names and SMILES:**
 - If you find IUPAC names or SMILES strings for compounds you already extracted, fill in the IUPAC_Name and SMILES fields while keeping other fields the same
@@ -1044,9 +1043,9 @@ Please carefully examine the main text below and:
 1. Identify any compounds you extracted that are still missing IUPAC names or SMILES strings
 2. Search the main text for IUPAC names, SMILES strings, or full chemical names for these compounds
 3. For each compound where you find an IUPAC name or SMILES:
-   - Keep all other fields (Compound_Name, Degradation_Target, DC50, Dmax, etc.) EXACTLY the same as your previous extraction
+    - Keep all other fields (Compound_Name, Assay, Permeability_Metric, Papp, Papp_units, Figure, Notes, etc.) EXACTLY the same as your previous extraction
    - ONLY fill in or update the IUPAC_Name and SMILES fields
-   - Match the compound by its name (e.g., "compound 5", "molecule A") or by its degradation data
+    - Match the compound by its name (e.g., "compound 5", "molecule A") or by the extracted PAMPA data
 
 **Important:**
 - Focus on compounds extracted from supplementary files that might have IUPAC names or SMILES in the main text

@@ -26,47 +26,29 @@ response_schemas = [
         type="string",
     ),
     ResponseSchema(
-        name="Degradation_Target",
-        description="The target protein to be degraded",
+        name="Permeability_Metric",
+        description="The permeability metric measured (e.g., Papp, TEER). (optional)",
         type="string",
     ),
     ResponseSchema(
-        name="Recruiter",
-        description="The E3 ligase (or E3 ligase-recruiting protein) involved in the degradation process.",
+        name="Papp",
+        description="Apparent permeability coefficient value. (optional)",
         type="string",
     ),
     ResponseSchema(
-        name="Assay",
-        description="The assay method used to measure degradation",
+        name="Papp_units",
+        description="The units of Papp measurement. (optional)",
         type="string",
     ),
     ResponseSchema(
-        name="Cell_Line",
-        description="The specific cell line used for the assay; if a cell-free assay is used, denote this as 'cell-free'",
+        name="Figure",
+        description="Figure(s) or scheme(s) where the data is presented. (optional)",
         type="string",
     ),
     ResponseSchema(
-        name="DC50",
-        description="The compound concentration required to achieve 50% degradation of the target protein. (optional)",
-    ),
-    ResponseSchema(
-        name="DC50_units", description="The units of DC50 measurement.(optional)"
-    ),
-    ResponseSchema(
-        name="DC50_h",
-        description="Time point (in hours) at which the DC50 measurement was obtained. (optional)",
-    ),
-    ResponseSchema(
-        name="Dmax",
-        description="The maximal degradation observed (out of 100%). (optional)",
-    ),
-    ResponseSchema(
-        name="Dmax_h",
-        description="Time point (in hours) at which the Dmax measurement was obtained. (optional)",
-    ),
-    ResponseSchema(
-        name="Dmax_concentration",
-        description="The compound concentration at which the maximum degradation (Dmax) was observed (e.g., 100 nM, 1 μM). (optional)",
+        name="Notes",
+        description="Additional notes or comments about the data. (optional)",
+        type="string",
     ),
 ]
 
