@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tpd_curator"
+version = "0.1.0"
+description = "LLM-assisted literature extraction workflow for targeted protein degradation (TPD) databases"
+readme = "README.md"
+requires-python = "==3.10.*"
+license = { file = "LICENSE" }
+
+[tool.hatch.build.targets.wheel]
+packages = ["tpd_curator"]
